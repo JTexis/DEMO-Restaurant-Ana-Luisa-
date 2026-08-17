@@ -720,3 +720,24 @@ footer {
     font-size: 43px;
   }
 }
+
+
+@media (max-width: 400px){
+
+  .nav-links{
+    display: none;
+  }
+
+  
+  .hero-delivery{
+    gap: 15px;
+  }
+
+  .hero-delivery-card{
+    width: 60px;
+    padding-top: 15px;
+    font-size: 9px;
+  }
+
+
+}
