@@ -547,11 +547,18 @@ footer {
   }
 
   .navbar {
-    grid-template-columns: 1fr auto;
+    display: flex;
+    /*grid-template-columns: 1fr auto;*/
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .nav-links {
+  .nav-links a:not([href="#menu"]){
     display: none;
+  }
+
+  .nav-links a{
+    font-size: 14px;
   }
 
   .hero {
@@ -662,7 +669,7 @@ footer {
   }
 
   .hero-main-image .image-frame {
-    height: 440px;
+    height: 220px;
   }
 
   .about-image,
