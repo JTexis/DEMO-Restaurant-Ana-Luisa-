@@ -258,22 +258,31 @@ header {
 
 
 /* =========================================
-   STORY INTRO
+   MENU INTRO
 ========================================= */
 
-.story-intro {
+.menu {
   max-width: 700px;
 
-  margin: 0 auto 150px;
+  margin: 0 auto 100px;
 
   text-align: center;
+
+  border-top: 1px solid var(--border);
+
+  border-bottom: 1px solid var(--border);
+
+  padding-top: 50px;
+
+  padding-bottom: 50px;
 }
 
-.story-intro .star {
+
+.menu .star {
   margin-bottom: 15px;
 }
 
-.story-intro h2 {
+.menu h2 {
   margin-bottom: 20px;
 
   font-size: clamp(40px, 5vw, 62px);
@@ -281,7 +290,7 @@ header {
   font-weight: 500;
 }
 
-.story-intro p {
+.menu p {
   max-width: 610px;
 
   margin: 0 auto;
@@ -291,17 +300,17 @@ header {
   padding-bottom: 20px;
 }
 
-.story-intro .button {
+.menu .button {
   margin-top: 24px;
 }
 
 
 /* =========================================
-   ABOUT
+   UBICACION
 ========================================= */
 
-.about {
-  display: grid;
+.ubicacion {
+  /*display: grid;
 
   grid-template-columns: 1fr 1fr;
 
@@ -309,14 +318,23 @@ header {
 
   align-items: center;
 
-  margin-bottom: 150px;
+  margin-bottom: 150px;*/
+  grid-template-columns: 1fr;
+
+  gap: 50px;
+
+  margin-bottom: 100px;
 }
 
-.about-content {
-  max-width: 330px;
+.ubicacion-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: grid;
 }
 
-.about-content h2 {
+.ubicacion-content h2 {
   margin: 12px 0 20px;
 
   font-size: 50px;
@@ -324,23 +342,39 @@ header {
   font-weight: 500;
 }
 
-.about-content p {
+.ubicacion-content p {
   margin-bottom: 22px;
 
   font-size: 10px;
   line-height: 1.45;
 }
 
-.about-image {
+.ubicacion-content .map {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.ubicacion-content .button {
+  margin-top: 24px;
+}
+
+/*.map {
+  width: 100px;
+  height: 100%;
+  margin-top: 20px;
+}*/
+
+/*.about-image {
   position: relative;
 
   width: 350px;
   height: 430px;
 
   margin-left: auto;
-}
+}*/
 
-.about-image::before {
+/*.about-image::before {
   content: "✦";
 
   position: absolute;
@@ -353,21 +387,21 @@ header {
   z-index: 2;
 
   font-size: 17px;
-}
+}*/
 
-.about-image .image-frame {
+/*.about-image .image-frame {
   width: 100%;
   height: 100%;
 
   border-radius: 130px 130px 0 0;
-}
+}*/
 
-.about-image img {
+/*.about-image img {
   width: 100%;
   height: 100%;
 
   object-fit: cover;
-}
+}*/
 
 
 /* =========================================
@@ -598,7 +632,7 @@ footer {
     margin-bottom: 100px;
   }
 
-  .about,
+  .ubicacion,
   .chef {
     grid-template-columns: 1fr;
 
@@ -607,7 +641,7 @@ footer {
     margin-bottom: 100px;
   }
 
-  .about-content,
+  .ubicacion-content,
   .chef-content {
     max-width: 500px;
 
@@ -616,7 +650,7 @@ footer {
     text-align: center;
   }
 
-  .about-image,
+  .ubicacion-image,
   .chef-image {
     width: min(350px, 80%);
 
