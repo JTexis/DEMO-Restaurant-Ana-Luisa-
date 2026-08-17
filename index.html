@@ -1,77 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Luisa Restaurante</title>
 
-<title>Restaurante Ana Luisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-<!-- Top Bar 
-<header class="top-bar">
-    <div class="nav-container">
 
-        <div class="brand">
-            <img src="assets/logo.png" alt="Restaurant Logo">
-            <span>Restaurante Ana Luisa</span>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+
+      <a href="#" class="logo">
+        Ana Luisa Restaurante
+      </a>
+
+      <div class="nav-links">
+        <a href="#story">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Localizacion</a>
+        <a href="#delivery">Ordena aqui</a>
+
+      </div>
+
+      <a href="#contact" class="contact">
+        Contact
+      </a>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container">
+
+      <div class="hero-main-image">
+
+        <div class="image-frame">
+          <img
+            src="images/logo.png"
+            alt="Ana Luisa Restaurante"
+          >
         </div>
 
-        <nav>
-            <a href="#menu">Menu</a>
-            <a href="#order">Order Online</a>
-        </nav>
+      </div>
 
-    </div>
-</header>
--->
+      <div class="hero-title">
+        <h2 class="serif">
+          Búscanos en...<br>
+        </h2>
+      </div>
 
-<div class="container">
+      <div class="hero-delivery">
 
-    <img src="assets/logo.png" class="logo" alt="Restaurant Logo">
+        <div class="hero-delivery-card">
+          <span class="star">✦</span>
+            <img src="images/Diddi_logo.avif" alt="Logo de DiDi Food">
+        </div>
 
-    <!--<h1>Restaurante Ana Luisa</h1>-->
+        <div class="hero-delivery-card">
+          <span class="star">✦</span>
+            <img src="images/Rappi logo.avif" alt="Logo de Rappi">
+        </div>
 
-    <!--<p class="subtitle">
-        Desde 2012
-    </p>-->
+        <div class="hero-delivery-card">
+          <span class="star">✦</span>
+          <img src="images/Uber_logo.avif" alt="Logo de Uber Eats">
+        </div>
 
-    <section class="menu">
+        <!-- <div class="hero-small-image">
+          <img
+            src="images/chef-small.jpg"
+            alt="Chef trabajando en la cocina"
+          >
+        </div> -->
 
-        <img src="assets/menu.jpg"
-             alt="Restaurant Menu"
-             class="menu-image">
+      </div>
 
     </section>
 
-    <h2>¡Contamos con servicio de entrega!</h2>
 
-    <div class="apps">
+    <!-- STORY INTRO -->
+    <section class="story-intro container" id="story">
 
-        <a href="https://www.ubereats.com/"
-           target="_blank">
+      <span class="star">✦</span>
 
-            <img src="assets/Uber_logo.avif"
-                 alt="Uber Eats">
+      <h2 class="serif">
+        Every dish tells a story.
+      </h2>
 
+      <p>
+        At Bucca di Beppo, every dish tells a story. From the carefully
+        crafted recipes passed down through generations to the locally
+        sourced ingredients that showcase the bounty of our region,
+        each dish we serve is a tribute to the rich history and culture
+        of Italian cuisine.
+      </p>
+
+      <a href="#" class="button">
+        Read our story
+      </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about container">
+
+      <div class="about-content">
+
+        <span class="eyebrow">
+          Our story
+        </span>
+
+        <h2 class="serif">
+          About us
+        </h2>
+
+        <p>
+          Since our inception, we have been committed to delivering
+          a memorable dining experience that captures the essence of
+          Italian culture. From our rustic decor to our menu featuring
+          traditional favorites, we strive to create a warm and inviting
+          atmosphere that transports our guests to the heart of Italy.
+        </p>
+
+        <a href="#" class="button">
+          Read about us
         </a>
 
-        <a href="https://www.diddi.com/"
-           target="_blank">
+      </div>
 
-            <img src="assets/Diddi_logo.avif"
-                 alt="Diddi">
+      <div class="about-image">
 
+        <div class="image-frame">
+          <img
+            src="images/about.jpg"
+            alt="Preparación de pasta italiana"
+          >
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CHEF -->
+    <section class="chef container">
+
+      <div class="chef-image">
+
+        <div class="image-frame">
+          <img
+            src="images/chef.jpg"
+            alt="Chef Beppo"
+          >
+        </div>
+
+      </div>
+
+      <div class="chef-content">
+
+        <span class="eyebrow">
+          Our story
+        </span>
+
+        <h2 class="serif">
+          Chef Beppo
+        </h2>
+
+        <p>
+          With over 50 years of experience in the culinary industry,
+          Chef Beppo is an expert in crafting exceptional dishes that
+          showcase the best of Italian cuisine. His passion for cooking
+          and dedication to using only the finest, freshest ingredients
+          is what sets our restaurant apart.
+        </p>
+
+        <a href="#" class="button">
+          See our staff
         </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESERVATION -->
+    <section class="reservation container" id="reservation">
+
+      <span class="star">✦</span>
+
+      <h2 class="serif">
+        Reserve a table
+      </h2>
+
+      <p>
+        Ready to experience the authentic flavors of Italy?
+        Make a reservation at our restaurant today and let us
+        take you on a culinary journey through the regions of Italy.
+      </p>
+
+      <a href="#" class="button">
+        Make a reservation
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        Bucca di Beppo
+      </div>
+
+      <div class="footer-links">
+        <a href="#story">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservations</a>
+      </div>
+
+      <div class="socials">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">♥</a>
+        <a href="#">in</a>
+      </div>
 
     </div>
 
-</div>
+    <div class="footer-bottom">
+
+      <span>
+        © 2023 Bucca di Beppo. All rights reserved.
+      </span>
+
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookies Settings</a>
+
+    </div>
+
+  </footer>
 
 </body>
 </html>
